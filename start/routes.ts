@@ -23,3 +23,6 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async ({ view }) => {
   return view.render('welcome')
 })
+
+Route.get('/login', 'Authentication/LoginController.index')
+Route.get('/register', 'Authentication/RegisterController.index')
